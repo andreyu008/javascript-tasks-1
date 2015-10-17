@@ -14,7 +14,7 @@ if (hours >= 0 && hours <=23 && minutes >=0 && minutes<=60) {
     var minutesTens = Math.floor(minutes/10)*10;
     var minutesUnits = minutes % 10;
     var romanMinutes = romans[minutesTens]+romans[minutesUnits];
-    console.log(hours === 0 ? '-' : romanHours);
+    console.log(hours === 0 ? '-' : romanHours, romanMinutes);
 } else{
     console.log('Время указанно неверно');
 }
